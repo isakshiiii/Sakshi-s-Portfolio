@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakshi's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.js">
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="mylogo1.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p></p>
+                <h1>Hi, I'm <span>Sakshi Singh</span> <br>
+                    <span8  class="element" style="font-size: 30px;"> 
+                    </span8>
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="mypg2.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello to all of you. I'm <span style="color: #b54769;">Sakshi</span>, a 3rd student at Indian
+                        Institute of Technology Roorkee who is
+                        interested about frontend web development.Despite my involvement in the demanding field
+                        of engineering academia,I spend my leisure time creating aesthetically beautiful and intuitive
+                        user interfaces. I love the challenge of addressing problems in frontend development and turning
+                        concepts into interactive online experiences.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('area of interest')">Area Of Interest</p>
+
+                    </div>
+                    <div class="tab-contents" id="area of interest">
+                        <ul>
+                            <li><span>UI/UX</span><br>I'm fascinated by UI/UX design and how it can make a product not
+                                just functional but truly enjoyable to use.</li>
+                            <li><span>Python/Excel</span><br>I'm also interested in Data Analytics and visualizing data
+                            </li>
+                            <li><span>Geology</span><br>I'm majoring in geology at college and find it incredibly
+                                fascinating. I'm really passionate about understanding the Earth's history and
+                                processes.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Finance/Web-Development | Kshijit</span><br>Managing website and finances of
+                                Kshitij society of my campus.</li>
+                            <li><span>Developer/Manager | Sangram 2024 </span><br>Managing and making changes in
+                                Sangram's website as well as Planning and Logistics: Securing the venue, finalizing the
+                                event schedule, overseeing equipment rentals, arranging
+                                transportation and accommodation for athletes (if necessary), and managing volunteers
+                                would have been part of my
+                                work.</li>
+                            <li><span>Undergraduate Teaching Assistant (UGTA) | Academic Reinforcement Program - IIT
+                                    Roorkee</span><br>Guided the first-year students throughout the semester in the
+                                course: Geological Processes.</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>2022-2027</span><br>IIT Roorkee - Currently a 3rd year undergraduage student
+                                [Branch - Imt. Geological Technology]</li>
+                            <li><span>2022</span><br>12th from Kendriya Vidyalaya Kanpur - 91.6% [Stream-PCM]</li>
+                            <li><span>2020</span><br>10th from Kendriya Vidyalaya Kanpur - 95.4%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="skills-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>HTML</h2>
+                    <p>HTML is my web development foundation. Imagine it as the blueprint for a website. I use HTML tags
+                        to structure content, like headings, paragraphs, and images. This tells browsers what to display
+                        and where. It's the essential first step to crafting any website, ensuring a smooth user
+                        experience.</p>
+
+                </div>
+                <div>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h2>CSS</h2>
+                    <p>My CSS skills go beyond making websites pretty. Sure, I can design with colors, fonts, and
+                        layouts, but I can also craft responsive interfaces that adapt to any device. Using CSS, I build
+                        user-friendly experiences by fine-tuning animations, transitions, and interactive elements. It's
+                        the magic behind the visual experience!</p>
+
+                </div>
+                <div>
+                    <i class="fa-brands fa-js"></i>
+                    <h2>JavaScript</h2>
+                    <p>JavaScript (JS) breathes life into websites! This versatile skill lets me, a frontend developer,
+                        add interactivity like animations and user-friendly features. It's like the glue that connects
+                        design and functionality, making web pages engaging and dynamic.</p>
+
+                </div>
+                <div>
+                    <i class="fa-brands fa-react"></i>
+                    <h2>React</h2>
+                    <p>React is a potent JavaScript package for UI development. It simplifies complicated web pages into
+                        reusable parts, which makes updating and managing them simpler. This allows me to write
+                        maintainable and effective code, even for enormous projects. Due to React's ability to ensure
+                        that the user interface (UI) updates rapidly and effectively, I am also able to concentrate on
+                        designing a seamless user experience.</p>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="aamazonpg3.jpg">
+                    <div class="layer">
+                        <h3>Amazon Clone Design</h3>
+                        <p>This static website demonstrates my proficiency with HTML and CSS. Using CSS to style the
+                            elements and HTML for the structure, I created a near-exact visual copy of the original. The
+                            restrictions of HTML and CSS prevent it from being interactive, even though it captures the
+                            style and feel. Think of it as a chic nod to the original website.</p>
+                        <a href="https://isakshiiii.github.io/Amazone-Clone-Design-/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="reactpg3.jpg" />
+                    <div class="layer">
+                        <h3>A React project</h3>
+                        <p>Leveled up my React skills by building this website! I utilized component-based architecture
+                            and state management to create this website . It's a testament to my ability to design
+                            dynamic user experiences with React.</p>
+                        <a href="https://github.com/isakshiiii/Ev-website-using-react"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="geminipg3.jpg" />
+                    <div class="layer">
+                        <h3>Google Gemini Clone</h3>
+                        <p>I built a functional clone of Google's AI assistant, Gemini! This project showcases my
+                            proficiency in web development, utilizing HTML for structure, CSS for styling, and
+                            JavaScript for interactive elements. React, a popular framework, simplifies building the
+                            user interface and managing its state. Finally, by leveraging APIs, I enabled the
+                            application to communicate with external data sources, making it a versatile tool for
+                            information access and interaction.</p>
+                        <a href="https://github.com/isakshiiii/Gemini-ai-clone"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact</h1>
+                    <p><i class="fa-solid fa-envelope"></i>sakshi_s@es.iitr.ac.in</p>
+                    <p><i class="fa-solid fa-phone"></i>6306141277</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/sakshi-singh-44a47028a"><i
+                                class="fa-brands fa-linkedin"></i><span style="font-size:25px;">Linkedin</span></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <a href="./images/off.resume.pdf" class="btn btn2">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <Script>
+        var typed = new Typed('.element', {
+  strings: [" a 3rd year student at IIT Roorkee." , "I give websites life." ,"Frontend architect, creating captivating and ","conversion-oriented responsive interfaces", "with state-of-the-art JS."],
+  typeSpeed: 70,
+  backSpeed: 40,
+  loop:true
+});
+    </Script>
+</body>
+
+</html>
